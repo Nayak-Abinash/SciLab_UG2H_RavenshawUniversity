@@ -2,8 +2,8 @@
 //the Euler's method.
 
 clc;
-function yp=f(x,y) //defines the ODE
-    yp=x+y //defines the function
+function yp=f(x,y) //defines the ODE: y'=f(x,y)
+    yp=x+y //defines the function f(x,y)=x+y
 endfunction
 xi=0;yi=1; //state the initial values
 xf=0.3; //define the endpoint
