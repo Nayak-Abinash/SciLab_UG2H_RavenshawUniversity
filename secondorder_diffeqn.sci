@@ -4,7 +4,7 @@
 //The trick to solve is to define y'=z and writing the diff eqn as
 // z'=y-2z and solving these two ODEs simultaneously.
 
-//clc();clf(); //clears the graphic console
+clc();clf(); //clears the graphic console
 function dy=f(x,y) //define a general differential of y
     dy(1)=y(2) //let's say y is an array with the 1st component=y & 
                //2nd component=z. Then this eqn defines y'=z
