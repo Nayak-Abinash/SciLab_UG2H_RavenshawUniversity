@@ -9,5 +9,5 @@ endfunction
 plot2d(dirac_integral(0.1,xfloat),style=2,leg="P1");
 plot2d(dirac_integral(1.1,xfloat),style=3,leg="P2");
 plot2d(dirac_integral(2.1,xfloat),style=5,leg="P3");
-legend('sigma='+string(0.1:2.1),1);
+legend('sigma='+string(0.1:2.1),2);
 xtitle("The Dirac Integral for different sigmas");
