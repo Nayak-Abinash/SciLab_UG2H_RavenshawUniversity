@@ -37,6 +37,6 @@ plot2d(y,ff(y,3),style=3,leg="P2");
 plot2d(y,ff(y,5),style=4,leg="P3");
 plot2d(y,ff(y,7),style=5,leg="P4"); 
 plot2d(y,ff(y,9),style=6,leg="P5");
-//plot2d(x,legendre(1:6,0,x)', style=2:7, leg="P1@P2@P3@P4@P5@P6");
 legend('n='+string(1:5),1);
 xtitle("Fourier Series Expansion");
+
