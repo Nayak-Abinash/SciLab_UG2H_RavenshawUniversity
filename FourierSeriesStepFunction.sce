@@ -31,12 +31,20 @@ fourierseries=0;
     end
     forf = a0/2 + fourierseries
 endfunction
-y=linspace(-L,L,1000)';
-plot2d(y,ff(y,1),style=2,leg="P1"); 
-plot2d(y,ff(y,3),style=3,leg="P2"); 
-plot2d(y,ff(y,5),style=4,leg="P3");
-plot2d(y,ff(y,7),style=5,leg="P4"); 
-plot2d(y,ff(y,9),style=6,leg="P5");
+y=linspace(-L,L,1000);
+plot2d(y,ff(y,1),style=3,leg="P1"); 
+plot2d(y,ff(y,3),style=4,leg="P2"); 
+plot2d(y,ff(y,5),style=5,leg="P3");
+plot2d(y,ff(y,7),style=6,leg="P4"); 
+plot2d(y,ff(y,9),style=1,leg="P5",rect=[0,0,5,1.5]);
+plot(y,f,'black--');
+plot(y,(0*y),'black--');
+a=gca();
+a.thickness=2;
+a.box="on";
+a.children.children.thickness=1;
+title("Fourier Series Expansion","fontsize",4,"fontname",2);
+xlabel("x","fontsize",5,"fontname",3);
+ylabel("f(x)","fontsize",4,"fontname",3);
 legend('n='+string(1:5),1);
-xtitle("Fourier Series Expansion");
 
